@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="org.jodd:jodd-json:3.8.0" type="repository">
+    <properties maven-id="org.jodd:jodd-json:3.8.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jodd-json-3.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jodd-bean-3.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jodd-core-3.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/jodd-json-3.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/jodd-json-3.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
