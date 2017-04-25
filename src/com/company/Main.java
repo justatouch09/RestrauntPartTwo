@@ -7,6 +7,7 @@ import spark.Spark;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class Main {
     //menu
@@ -73,6 +74,26 @@ public class Main {
 
             return serializer.deep(true).serialize(h);
         });
+
+        Spark.get("/order", ((request, response) -> {
+            List individualOrders = new ArrayList();
+
+            for (String key : orders.keySet()) {
+                ArrayList items = orders.get(key);
+
+                Bill b = new Bill(key, items);
+
+                individualOrders.addAll(b.getIndividualOrders());
+            }
+
+            return new JsonSerializer().deep(true).serialize(individualOrders);
+        }));
+
+        Spark.get("/order/:table_id", ((request, response) -> {
+            String tableId = request.params("table_id");
+            Bill b = new Bill(tableId, orders.get(tableId));
+            return new JsonSerializer().deep(true).serialize(b.getIndividualOrders());
+        }));
     }
 }
 
