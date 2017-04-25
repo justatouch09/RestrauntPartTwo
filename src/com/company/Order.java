@@ -4,28 +4,23 @@ package com.company;
  * Created by jaradtouchberry on 4/21/17.
  */
 public class Order {
-    String tableId;
-    int id;
+    private String orderId;
 
-    public Order(String tableId, int id) {
-        this.tableId = tableId;
-        this.id = id;
+    public Order() {
     }
 
-    public String getTableId() {
-        return tableId;
+    public Order(String orderId) {
+        this.orderId = orderId;
     }
 
-    public void setTableId(String tableId) {
-        this.tableId = tableId;
+    public String getOrderId() {
+        return orderId;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 }
+
+
 

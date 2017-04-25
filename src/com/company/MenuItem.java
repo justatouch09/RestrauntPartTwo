@@ -4,11 +4,11 @@ package com.company;
  * Created by jaradtouchberry on 4/21/17.
  */
 public class MenuItem {
-    int id;
-    String name;
-    String description;
-    double price;
-    boolean available;
+    private int id;
+    private String name;
+    private String description;
+    private double price;
+    private boolean available;
 
     public MenuItem() {
 
