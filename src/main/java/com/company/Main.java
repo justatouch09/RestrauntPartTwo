@@ -14,6 +14,7 @@ public class Main {
     private static ArrayList<MenuItem> menuItems = new ArrayList<>();
 
     public static void main(String[] args) {
+        Spark.port(Integer.valueOf(System.getenv("PORT")));
         Spark.init();
         //created hashmap purpose of table names, menu items that they have ordered a list
         HashMap<String, ArrayList<MenuItem>> orders = new HashMap<>();
