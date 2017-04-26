@@ -44,22 +44,16 @@ public class Main {
 
             return "";
         });
-//
-//        Spark.get("/menuItem", (req, res) -> {
-//            JsonSerializer serializer = new JsonSerializer();
-//
-//            return serializer.serialize(menuItems);
-//        });
-//
-//        Spark.post("/menuItem", (req, res) -> {
-//            String json = req.body();
-//
-//            MenuItem a = new JsonParser().parse(json, MenuItem.class);
-//
-//            menuItems.add(a);
-//
-//            return "";
-//        });
+
+        Spark.post("/menuItem", (req, res) -> {
+            String json = req.body();
+            MenuItem a = new JsonParser().parse(json, MenuItem.class);
+            String menuItem = req.params("menuItem");
+            menuItems.add(a);
+
+            return "";
+        });
+
         Spark.get("/menu", (req, res) -> {
             JsonSerializer serializer = new JsonSerializer();
             return serializer.serialize(menuItems);
