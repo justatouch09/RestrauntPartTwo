@@ -1,1 +1,1 @@
-web: java -jar Restauranteur-1.0-SNAPSHOT.jar
+web: java -jar target/Restauranteur-1.0-SNAPSHOT.jar

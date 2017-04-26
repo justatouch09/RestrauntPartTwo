@@ -29,6 +29,8 @@
     <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-api:9.3.6.v20151106" level="project" />
     <orderEntry type="library" name="Maven: com.sparkjava:spark-template-mustache:2.3" level="project" />
     <orderEntry type="library" name="Maven: com.github.spullara.mustache.java:compiler:0.9.0" level="project" />
-    <orderEntry type="library" name="Maven: org.jodd:jodd-json:2.8.5" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-json:3.8.5" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-bean:3.8.5" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-core:3.8.5" level="project" />
   </component>
 </module>
